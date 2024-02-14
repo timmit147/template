@@ -1,0 +1,13 @@
+name: Handle Custom Event
+
+on:
+  repository_dispatch:
+    types: 
+      - custom_event
+
+jobs:
+  handle_custom_event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show User Input
+        run: echo "User Input: ${{ github.event.client_payload }}"
