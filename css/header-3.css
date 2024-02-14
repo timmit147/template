@@ -51,16 +51,20 @@
 }
 
 
-a.active{
-    background-color: #F4B400;
-    transition: 0.5s;
-}
-
 a:hover{
     background-color: #F4B400;
     cursor: pointer;
 }
 
+a.whatsapp {
+    animation: changeColor 0.5s ease 5s forwards; /* Delay of 5 seconds */
+  }
+  
+  @keyframes changeColor {
+    to {
+      background-color: #F4B400;
+    }
+  }
 
 strong{
     font-weight: 700;
