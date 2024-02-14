@@ -1,0 +1,40 @@
+.header-2 {
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    background-color: #b55ebb;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-2 h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.header-2 img {
+    width: calc(50% - 10px);
+}
+
+.header-2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 10px);
+}
+
+.header-2 p {
+    max-width: 500px;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .header-2 {
+        flex-direction: column;
+    }
+    
+    .header-2 .content,.header-2 img {
+        width: 100%;
+    }
+}

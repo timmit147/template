@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header-2.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/menu-2.css">
     <link rel="stylesheet" href="css/menu-3.css">
     <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/form.css">
+
 
 
 
@@ -19,7 +22,7 @@
 
 <body>
 
-    <header id="menu">
+    <header class="menu">
         <nav>
             <a href="#">Home</a> |
             <a href="#">Interview</a> |
@@ -29,7 +32,7 @@
         </nav>
     </header>
 
-    <header id="menu-2">
+    <header class="menu-2">
         <nav>
             <a href="#">Home</a> |
             <a href="#">Interview</a> |
@@ -39,7 +42,7 @@
         </nav>
     </header>
 
-    <header id="menu-3">
+    <header class="menu-3">
         <nav>
             <a href="#">Home</a> |
             <a href="#">Interview</a> |
@@ -50,19 +53,39 @@
     </header>
 
 
-    <section id="header">
+    <section class="header">
         <h1>Teplate website</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
         <img src="images/header-background.jpg" alt="Header background">
     </section>
 
-    <section id="weather">
-        <h1>Weer in Utrecht</h1>
+    <section class="header-2">
+        <div class="content">
+            <h1>Teplate website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+        </div>
+        <img src="images/pink.jpg" alt="Header background">
+    </section>
+
+    
+
+    <section class="weather">
+        <h2>Weer in Utrecht</h2>
         <p>Tempratuur:</p>
     </section>
 
 
-    <footer id="footer">
+    <form class="form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button >Submit</button>
+    </form>
+
+    <footer class="footer">
         <nav>
             <a href="#">Home</a> |
             <a href="#">Interview</a> |
@@ -76,6 +99,8 @@
 </body>
 <script src="js/main.js"></script>
 <script src="js/weather.js"></script>
+<script src="js/form.js"></script>
+
 
 
 </html>

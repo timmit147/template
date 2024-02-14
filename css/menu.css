@@ -1,7 +1,7 @@
-#menu{
+.menu{
     padding: 20px;
 }
 
-#menu a{
+.menu a{
     color: black;
 }
