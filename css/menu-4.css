@@ -1,0 +1,80 @@
+.menu-4 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+    gap: 20px;
+}
+
+.menu-4 a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding-bottom: 4px;
+}
+
+.menu-4 a:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu-4 nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    gap: 30px;
+}
+
+.hamburger-menu {
+    display: none; /* Hide by default on non-mobile screens */
+}
+
+.menu-4  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-4 {
+        grid-template-rows: auto auto; /* Two rows on small screens */
+    }
+
+    .menu-4 nav {
+        display: none; /* Hide nav links on small screens by default */
+        width: 100%; /* Make nav full width */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .menu-4  .hamburger-menu {
+        display: block; /* Show hamburger menu on small screens */
+        cursor: pointer;
+        justify-self: right;
+        font-size: 35px;
+    }
+
+    .menu-4.active nav {
+        display: flex; /* Show nav when menu is active */
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .menu-4.active nav {
+        grid-column: span 2; /* Make nav span both columns on small screens */
+        justify-content: left; /* Center navigation items on small screens */
+    }
+    .menu-4.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-4.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-4.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
