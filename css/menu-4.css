@@ -1,5 +1,5 @@
 .menu-4 {
-    margin: 20px;
+    margin: 20px 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -39,10 +39,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .menu-4 {
-        grid-template-rows: auto auto; /* Two rows on small screens */
-    }
-
     .menu-4 nav {
         display: none; /* Hide nav links on small screens by default */
         width: 100%; /* Make nav full width */

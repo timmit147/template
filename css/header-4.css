@@ -30,6 +30,8 @@
     width: 100%;
     object-fit: contain;
     object-position: bottom;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .header-4 .content {
@@ -37,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 60px 0px 60px 60px;
+    padding: 20px 0px 20px 40px;
 }
 
 .header-4 p {
@@ -71,6 +73,7 @@ strong{
 
     .header-4 img{
         height: 100%;
+        padding-right: unset;
     }
     
 }
