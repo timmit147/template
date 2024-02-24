@@ -1,5 +1,5 @@
 const imagesContainer = document.querySelector('.slider .images');
-const images = imagesContainer.querySelectorAll('img');
+const images = imagesContainer.querySelectorAll('picture');
 const duplicates = [];
 
 images.forEach(image => {

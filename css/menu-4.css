@@ -1,3 +1,11 @@
+.menu-4 {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    border-bottom: 1px solid;
+}
+
 .menu-4 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;

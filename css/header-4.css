@@ -27,7 +27,6 @@
     width: 100%;
     object-fit: contain;
     object-position: bottom;
-    padding-right: 40px;
     box-sizing: border-box;
     margin-bottom: -20px;
 }

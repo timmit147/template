@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/header-6.css">
     <link rel="stylesheet" href="css/menu-4.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/block-calculator.css">
+
 
 
     <title>My Basic HTML Page</title>
@@ -19,7 +22,7 @@
 
     <section class="menu-4">
         <div class="container">
-            <img src="images/logo.svg" alt="Logo">
+            <img src="images/logo-simple.svg" alt="Logo">
             <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -54,14 +57,43 @@
             <h2>Projecten</h2>
             <p>Dit zijn een aantal websites waar ik aan gewerkt heb.</p>
             <div class="images">
-                <img src="images/oogvereniging.webp" alt="oogvereniging">
-                <img src="images/smolke.png" alt="smolke">
-                <img src="images/moduloo.png" alt="moduloo">
-                <img src="images/rodewinkel.png" alt="rodewinkel">
-                <img src="images/hace.jpg" alt="hace">
+                <picture><img src="images/oogvereniging.webp" alt="oogvereniging"></picture>
+                <picture><img src="images/smolke.png" alt="smolke"></picture>
+                <picture><img src="images/moduloo.png" alt="moduloo"></picture>
+                <picture><img src="images/rodewinkel.png" alt="rodewinkel"></picture>
+                <picture><img src="images/hace.jpg" alt="hace"></picture>
             </div>
         </div>
-        </section>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Veel gestelden vragen</h2>
+            <details>
+                <summary>Hoeveel kost een website gemideld?</summary>
+                <p>Een standaard kleine website kan ongeveer de 300 euro kosten. Op deze pagina staat ook een prijs bereken funtie waarbij je kan berekenen hoeveel je website ongeveer gaat kosten.</p>
+            </details>
+        
+            <details>
+                <summary>Hoelang duurt het maken van een website?</summary>
+                <p>Het maken van een website kan al binnen 2 weken klaar zijn afhankelijk van de groote van de website.</p>
+            </details>
+        
+            <details>
+                <summary>Kan ik zelf de website beheren nadat deze is gebouwd?</summary>
+                <p>Het maken van een website kan al binnen 2 weken klaar zijn afhankelijk van de groote van de website.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="block-calculator">
+        <div class="container">
+            <h2>Bereken prijs</h2>
+            <p>Website word opgebouwd uit blokken en het aantal blokken bepaald de prijs. Hergebruiken van blokken is goedkoper.</p>
+            <input></input>
+            
+        </div>
+    </section>
 
     <section class="header-5">
         <div class="container">
@@ -83,9 +115,11 @@
     </section>
 
 
+
 </body>
 <script src="js/menu-4.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/faq.js"></script>
 
 
 </html>
