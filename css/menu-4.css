@@ -1,10 +1,7 @@
-.menu-4 {
-    margin: 20px 40px;
+.menu-4 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    padding-left: calc((100% - 1280px) / 2);
-    padding-right: calc((100% - 1280px) / 2);
     gap: 20px;
 }
 
@@ -13,7 +10,6 @@
     text-decoration: none;
     border-bottom: 2px solid white;
     width: fit-content;
-    padding-bottom: 4px;
 }
 
 .menu-4 a:hover {

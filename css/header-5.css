@@ -1,29 +1,20 @@
 .header-5 {
-    padding: 60px;
-    position: relative;
-    justify-content: center;
     background-color: #1A3DB9;
-    margin-top: 100px;
+    padding: 100px 0px;
     color: white;
-    height: 60vh;
-    display: flex;
-    justify-content: left;
-    min-height: 100%;
-    padding-left: calc((100% - 1280px) / 2);
-    padding-right: calc((100% - 1280px) / 2);
 }
 
-.header-5 h2 {
-    font-size: 40px;
-    margin: 0px;
-}
 
 .header-5 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 40px;
+}
+
+.header-5 h2 {
+    font-size: 40px;
+    margin: 0px;
 }
 
 .header-5 p {
@@ -55,7 +46,7 @@
 }
 
 
-a:hover{
+.header-5 a:hover{
     background-color: #F4B400;
     cursor: pointer;
 }

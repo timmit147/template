@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header-4.css">
     <link rel="stylesheet" href="css/header-5.css">
+    <link rel="stylesheet" href="css/header-6.css">
     <link rel="stylesheet" href="css/menu-4.css">
+    <link rel="stylesheet" href="css/slider.css">
+
 
     <title>My Basic HTML Page</title>
 </head>
@@ -15,46 +18,66 @@
 <body>
 
     <section class="menu-4">
-        <img src="images/logo.svg" alt="Logo">
-        <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="container">
+            <img src="images/logo.svg" alt="Logo">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <a href="#">Projecten</a>
+                <a href="#">FAQ</a>
+                <a href="#">Prijs berekenen</a>
+                <a href="#">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#">Projecten</a>
-            <a href="#">FAQ</a>
-            <a href="#">Prijs berekenen</a>
-            <a href="#">Contact</a>
-        </nav>
     </section>
     
     
     
 
     <section class="header-4">
-        <div class="content">
-            <h1>Maatwerk websites</h1>
-            <p>Wil je een <strong>, persoonlijke en maatwerk website</strong> dan kan multii je daar mee helpen. </p>
+        <div class="container">
+            <div class="content">
+                <h1>Maatwerk websites</h1>
+                <p>Wil je een <strong>, persoonlijke en maatwerk website</strong> dan kan multii je daar mee helpen. </p>
+            </div>
+            <picture>
+                <img src="images/header-4-image.png" alt="Vrouw met laptop">
+            </picture>
         </div>
-        <picture>
-            <img src="images/header-4-image.png" alt="Vrouw met laptop">
-        </picture>
     </section>
 
+    <section class="slider">
+        <div class="container">
+            <h2>Projecten</h2>
+            <p>Dit zijn een aantal websites waar ik aan gewerkt heb.</p>
+            <div class="images">
+                <img src="images/oogvereniging.webp" alt="oogvereniging">
+                <img src="images/smolke.png" alt="smolke">
+                <img src="images/moduloo.png" alt="moduloo">
+                <img src="images/rodewinkel.png" alt="rodewinkel">
+                <img src="images/hace.jpg" alt="hace">
+            </div>
+        </div>
+        </section>
+
     <section class="header-5">
-        <div class="content">
-            <h2>Contact</h2>
-            <p>Stuur een simpele bericht met wat je nodig. Als je iemand kent die een website nodig heeft stuur graag door</p>
-            <div class="buttons">
-                <a class="whatsapp">
-                    <img src="images/whatsapp-white.svg" alt="Vrouw met laptop">
-                    Stuur een whatsapp
-                </a>
-                <a class="email">
-                    <img src="images/email-white.svg" alt="Vrouw met laptop">
-                    Stuur een mail
-                </a>
+        <div class="container">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>Stuur een simpele bericht met wat je nodig. Als je iemand kent die een website nodig heeft stuur graag door</p>
+                <div class="buttons">
+                    <a class="whatsapp">
+                        <img src="images/whatsapp-white.svg" alt="Vrouw met laptop">
+                        Stuur een whatsapp
+                    </a>
+                    <a class="email">
+                        <img src="images/email-white.svg" alt="Vrouw met laptop">
+                        Stuur een mail
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -62,5 +85,7 @@
 
 </body>
 <script src="js/menu-4.js"></script>
+<script src="js/slider.js"></script>
+
 
 </html>
