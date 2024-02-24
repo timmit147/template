@@ -42,6 +42,27 @@
     transition: transform 0.4s, opacity 0.4s;
 }
 
+#projecten{
+    scroll-margin-top: 140px;
+    scroll-snap-align: start;
+}
+
+#faq{
+    scroll-margin-top: 80px;
+    scroll-snap-align: start;
+}
+
+#price{
+    scroll-margin-top: 80px;
+    scroll-snap-align: start;
+}
+
+#contact{
+    scroll-margin-top: 80px;
+    scroll-snap-align: start;
+}
+
+
 @media screen and (max-width: 768px) {
     .menu-4 nav {
         display: none; /* Hide nav links on small screens by default */
