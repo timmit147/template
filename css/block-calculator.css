@@ -1,3 +1,37 @@
 .block-calculator{
     padding: 40px 0px;
 }
+
+.block-calculator table{
+    width: 100%;
+    margin: 20px 0px;
+    border-spacing: 0px;
+    border-bottom: 1px solid;
+}
+
+.block-calculator input{
+   padding: 10px;
+}
+
+.block-calculator th{
+    text-align: left;
+    padding: 20px;
+}
+
+.block-calculator td {
+    padding: 20px;
+}
+
+.block-calculator td {
+    border: 1px solid;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+
+.block-calculator tr td:last-child{
+    border-right: 1px solid;
+}
+
+.block-calculator table tr:nth-child(2n) {
+    background-color: #F2F2F2;
+}
