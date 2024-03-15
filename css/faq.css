@@ -28,7 +28,7 @@
 }
 
 .faq summary:hover{
-    background-color: orange;
+    background-color: black;
 }
 
 .faq summary::after {
@@ -52,8 +52,20 @@
     margin-bottom: 0px;
 }
 
+.faq a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.faq a:hover {
+    color: orange;
+}
+
 .faq .container > p{
     margin: 0px;
+    max-width: 400px;
 }
 
 .faq h2{
