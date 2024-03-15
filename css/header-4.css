@@ -43,10 +43,25 @@
     margin: 0;
 }
 
-.header-4  .buttons{
+.header-4 a {
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    font-weight: 900;
+    border-radius: 10px;
     display: flex;
     gap: 10px;
+    place-items: center;
+    text-decoration: none;
 }
+
+
+.header-4 a:hover{
+    background-color: #F4B400;
+    cursor: pointer;
+}
+
 
 strong{
     font-weight: 700;

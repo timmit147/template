@@ -34,15 +34,16 @@
 
 
 .header-5 a {
-    color: white;
-    border: 1px solid white;
-    padding: 15px;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
     width: fit-content;
     font-weight: 900;
     border-radius: 10px;
     display: flex;
     gap: 10px;
     place-items: center;
+    text-decoration: none;
 }
 
 

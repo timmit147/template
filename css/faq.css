@@ -52,6 +52,10 @@
     margin-bottom: 0px;
 }
 
+.faq .container > p{
+    margin: 0px;
+}
+
 .faq h2{
     margin: 0px;
     font-size: 40px;
