@@ -1,164 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/header-2.css">
-    <link rel="stylesheet" href="css/header-3.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/menu-2.css">
-    <link rel="stylesheet" href="css/menu-3.css">
-    <link rel="stylesheet" href="css/weather.css">
-    <link rel="stylesheet" href="css/form.css">
-
-
-
-
-    <title>My Basic HTML Page</title>
-</head>
-
-<body>
-
-    <header class="menu">
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#">Interview</a> |
-            <a href="#">Languages</a> |
-            <a href="#">Data Structure</a> |
-            <a href="#">Algorithm</a>
-        </nav>
-    </header>
-
-    <header class="menu-2">
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#">Interview</a> |
-            <a href="#">Languages</a> |
-            <a href="#">Data Structure</a> |
-            <a href="#">Algorithm</a>
-        </nav>
-    </header>
-
-    <header class="menu-3">
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#">Interview</a> |
-            <a href="#">Languages</a> |
-            <a href="#">Data Structure</a> |
-            <a href="#">Algorithm</a>
-        </nav>
-    </header>
-
-
-    <section class="header">
-        <h1>Teplate website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        <img src="images/header-background.jpg" alt="Header background">
-    </section>
-
-    <section class="header-2">
-        <div class="content">
-            <h1>Teplate website</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
-        <img src="images/pink.jpg" alt="Header background">
-    </section>
-
-    <section class="header-3">
-        <div class="content">
-            <h1>Custom websites</h1>
-            <p>We make custom websites based on what you need. Send a simple email or message to us with what you need and we respond.</p>
-            <strong>Click one of the links to get in contact ⌄</strong>
+<section class="blocks">
+    <div class="buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="header">Headers</button>
+        <button data-filter="menu">Menu</button>
+        <button data-filter="contact">Contact</button>
+        <button data-filter="faq">FAQ</button>
+        <button data-filter="prices">Prices</button>
+        <button data-filter="text">Text</button>
+        <button data-filter="projects">Projects</button>
+    </div>
+    <div class="examples">
+        <div class="header">
             <div class="buttons">
-                <a class="whatsapp">Send a whatsapp</a><a class="email">Send a email</a><a class="phone">Call us</a>
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
             </div>
+            <img src="images/blocks/header-1.png">
         </div>
-        <img src="images/oogvereniging.webp" alt="oogvereniging">
-    </section>
+
+        <div class="header">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/header-2.png">
+        </div>
+
+        <div class="text">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/text-1.png">
+        </div>
+
+        <div class="menu">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/menu-1.png">
+        </div>
+
+        <div class="menu">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/menu-2.png">
+        </div>
+
+        <div class="contact">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/contact-1.png">
+        </div>
+
+        <div class="contact">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/contact-2.png">
+        </div>
+
+        <div class="faq">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/faq-1.png">
+        </div>
+
+        <div class="prices">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/prices-1.png">
+        </div>
+
+        <div class="projects">
+            <div class="buttons">
+                <button data-text="html" class="copy">HTML</button>
+                <button data-text="css" class="copy">CSS</button>
+            </div>
+            <img src="images/blocks/projects-1.png">
+        </div>
+    </div>
+</section>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .blocks {
+        background-color: black;
+    }
+
+    .blocks > .buttons {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .blocks > .buttons > *{
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .blocks .buttons .active{
+        background-color: yellow;
+    }
+
+    .blocks .examples {
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .blocks .examples > * {
+        width: 100%;
+        border: 1px solid;
+        position: relative;
+        min-height: 100px;
+        align-content: center;
+    }
+
+    .blocks .examples > * img {
+        width: 100%;
+    }
+
+    .blocks > * .buttons {
+        position: absolute;
+        padding: 10px;
+        right: 0;
+    }
+
+    .blocks > *  .buttons button {
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll('.blocks > .buttons button');
+    const examples = document.querySelectorAll('.examples > *');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            this.classList.add('active');
+
+            const filter = this.dataset.filter;
+            showExamples(filter);
+        });
+    });
+
+    function showExamples(type) {
+        examples.forEach(example => {
+            if (type === 'all' || example.classList.contains(type)) {
+                example.style.display = 'block';
+            } else {
+                example.style.display = 'none';
+            }
+        });
+    }
+    document.querySelectorAll('.copy').forEach(button =>
+    button.addEventListener('click', () => {
+        const t = document.body.appendChild(document.createElement('textarea'));
+        t.value = button.closest(`button[data-text="${button.dataset.text}"]`).textContent;
+        t.select(), document.execCommand('copy'), document.body.removeChild(t);
+    })
+);
+
+
+
     
-
-    <section class="weather">
-        <h2>Weer in Utrecht</h2>
-        <p>Tempratuur:</p>
-    </section>
-
-    <section class="block-calculator" id="price">
-        <div class="container">
-            <h2>Bereken prijs</h2>
-            <p>Website word opgebouwd uit blokken en het aantal blokken bepaald de prijs. Hergebruiken van blokken is goedkoper.</p>
-            <input value="Blok toevoegen..."></input>
-            <table>
-                <tr>
-                  <th>Block</th>
-                  <th>Prijs</th>
-                  <th>Aantal</th>
-                  <th>Totaal</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>Tekst block</td>
-                  <td>10 euro</td>
-                  <td>5x</td>
-                  <td>25 euro</td>
-                  <td>Verwijder</td>
-                </tr>
-                <tr>
-                    <td>Tekst block</td>
-                    <td>10 euro</td>
-                    <td>5x</td>
-                    <td>25 euro</td>
-                    <td>Verwijder</td>
-                </tr>
-                <tr>
-                    <td>Tekst block</td>
-                    <td>10 euro</td>
-                    <td>5x</td>
-                    <td>25 euro</td>
-                    <td>Verwijder</td>
-                </tr>
-                <tr>
-                    <td>Tekst block</td>
-                    <td>10 euro</td>
-                    <td>5x</td>
-                    <td>25 euro</td>
-                    <td>Verwijder</td>
-                </tr>
-              </table>
-            
-        </div>
-    </section>
-
-
-    <form class="form">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-        <button >Submit</button>
-    </form>
-
-    <footer class="footer">
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#">Interview</a> |
-            <a href="#">Languages</a> |
-            <a href="#">Data Structure</a> |
-            <a href="#">Algorithm</a>
-        </nav>
-    </footer>
-
-
-</body>
-<script src="js/main.js"></script>
-<script src="js/weather.js"></script>
-<script src="js/form.js"></script>
-
-
-
-</html>
+</script>
