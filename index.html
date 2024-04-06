@@ -12,9 +12,8 @@
     <div class="examples">
         <div class="header">
             <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
+                <button onclick="downloadHTML('blocks/header-1.html')">Html</button>
+        </div>
             <img src="images/blocks/header-1.png">
         </div>
 
@@ -189,6 +188,20 @@
 );
 
 
+function downloadHTML(filename) {
+  // Fetch the content of the file using a fetch request
+  fetch(filename)
+    .then(response => response.text())
+    .then(content => {
+      const blob = new Blob([content], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;  // Use the filename for download
+      link.click();
+    })
+    .catch(error => console.error("Error downloading file:", error));  // Handle errors
+}
 
     
 </script>
