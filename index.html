@@ -11,82 +11,47 @@
     </div>
     <div class="examples">
         <div class="header">
-            <div class="buttons">
-                <button onclick="downloadHTML('blocks/header-1.html')">Html</button>
-        </div>
-            <img src="images/blocks/header-1.png">
+            <button onclick="downloadZip('blocks/header-1.zip')">Code</button>
+            <img src="images/header-1.png">
         </div>
 
         <div class="header">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/header-2.png">
+            <button onclick="downloadZip('blocks/header-4.zip')">Code</button>
+            <img src="images/header-2.png">
         </div>
 
         <div class="text">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/text-1.png">
+            <button onclick="downloadZip('blocks/header-2.zip')">Code</button>
+            <img src="images/text-1.png">
         </div>
 
         <div class="menu">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/menu-1.png">
-        </div>
-
-        <div class="menu">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/menu-2.png">
+            <button onclick="downloadZip('blocks/menu-4.zip')">Code</button>
+            <img src="images/menu-2.png">
         </div>
 
         <div class="contact">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/contact-1.png">
-        </div>
-
-        <div class="contact">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/contact-2.png">
+            <button onclick="downloadZip('blocks/header-5.zip')">Code</button>
+            <img src="images/contact-2.png">
         </div>
 
         <div class="faq">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/faq-1.png">
+            <button onclick="downloadZip('blocks/faq-1.zip')">Code</button>
+            <img src="images/faq-1.png">
         </div>
 
         <div class="prices">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/prices-1.png">
+            <button onclick="downloadZip('blocks/prices-1.zip')">Code</button>
+            <img src="images/prices-1.png">
         </div>
 
         <div class="projects">
-            <div class="buttons">
-                <button data-text="html" class="copy">HTML</button>
-                <button data-text="css" class="copy">CSS</button>
-            </div>
-            <img src="images/blocks/projects-1.png">
+            <button onclick="downloadZip('blocks/projects-1.zip')">Code</button>
+            <img src="images/projects-1.png">
+        </div>
+        <div class="forms">
+            <button onclick="downloadZip('blocks/form-1.zip')">Code</button>
+            <img src="images/form-1.png">
         </div>
     </div>
 </section>
@@ -94,6 +59,7 @@
 <style>
     body {
         margin: 0;
+        font-family: sans-serif;
     }
 
     .blocks {
@@ -113,8 +79,24 @@
         border-radius: 5px;
         font-weight: 600;
     }
+    
+    .blocks .buttons > .active{
+        background-color: yellow;
+    }
 
-    .blocks .buttons .active{
+    .blocks .examples button{
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        margin: 10px;
+        top: 0;
+    }
+
+    .blocks .examples button .active{
         background-color: yellow;
     }
 
@@ -188,12 +170,11 @@
 );
 
 
-function downloadHTML(filename) {
-  // Fetch the content of the file using a fetch request
+function downloadZip(filename) {
+  // Fetch the content of the zip file using a fetch request
   fetch(filename)
-    .then(response => response.text())
-    .then(content => {
-      const blob = new Blob([content], { type: 'text/html' });
+    .then(response => response.blob()) // Fetch the response as a blob
+    .then(blob => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
